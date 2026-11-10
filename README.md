@@ -1,66 +1,246 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CraftCeylon – Sri Lankan Handmade Crafts E-Commerce Business Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+CraftCeylon is a modern **E-Commerce Business Website** developed to promote and sell Sri Lankan handmade crafts and traditional products online.
 
-## About Laravel
+The website provides a professional online presence for a handmade crafts business, allowing customers to explore products, learn about the business, add products to their shopping cart, and place orders online.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+It also includes an Admin Dashboard that helps the business manage products, categories, customer orders, and customer inquiries efficiently.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Website Objectives
 
-## Learning Laravel
+- Promote Sri Lankan handmade crafts and traditional products.
+- Establish a professional online presence for the business.
+- Showcase handmade products with images and detailed descriptions.
+- Allow customers to browse and purchase products online.
+- Improve business operations through an administration system.
+- Provide a convenient and responsive shopping experience.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Main Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Customer Features
 
-## Laravel Sponsors
+- Customer Registration and Login
+- Home Page
+- About Us Page
+- Product Listing
+- Product Details
+- Shopping Cart
+- Checkout
+- Order Placement
+- Order Confirmation
+- Customer Dashboard
+- Order History
+- Individual Order Details
+- Contact Us Form
+- Responsive Mobile-Friendly Design
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Admin Features
 
-### Premium Partners
+- Admin Login and Authentication
+- Admin Dashboard
+- Category Management (Create, Read, Update, Delete)
+- Product Management (Create, Read, Update, Delete)
+- Order Management
+- Order Status Management
+- Contact Message Management
+- View Customer Inquiries
+- Manage Contact Messages
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## Technologies Used
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Technology | Purpose |
+|---|---|
+| PHP | Backend Programming |
+| Laravel | Backend Framework |
+| MySQL | Database Management |
+| HTML5 | Web Page Structure |
+| CSS3 | Styling |
+| Bootstrap 5 | Responsive UI Design |
+| JavaScript | Frontend Interactions |
+| Blade | Laravel Template Engine |
+| Git & GitHub | Version Control |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Project Requirements
 
-## Security Vulnerabilities
+- PHP 8.2 or higher
+- Composer
+- Node.js and npm
+- MySQL
+- XAMPP or another compatible local server
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## Installation Guide
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/hashiniranasingha/CraftCeylon.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd CraftCeylon
+```
+
+### 3. Install PHP Dependencies
+
+```bash
+composer install
+```
+
+### 4. Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### 5. Configure Environment
+
+Create a `.env` file by copying the example configuration:
+
+```bash
+copy .env.example .env
+```
+
+Generate the Laravel application key:
+
+```bash
+php artisan key:generate
+```
+
+### 6. Create MySQL Database
+
+Open phpMyAdmin and create a database named:
+
+`craftceylon_db`
+
+Update the database configuration in the `.env` file:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=craftceylon_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Change the database username and password according to your local configuration.
+
+### 7. Run Database Migrations
+
+```bash
+php artisan migrate
+```
+
+This command creates the required database tables.
+
+### 8. Create Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### 9. Build Frontend Assets
+
+```bash
+npm run build
+```
+
+### 10. Run the Application
+
+```bash
+php artisan serve
+```
+
+Open the application in your browser:
+
+http://127.0.0.1:8000
+
+---
+
+## Project Structure
+
+```text
+CraftCeylon/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   └── Models/
+│
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   ├── factories/
+│   └── seeders/
+│
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│
+├── routes/
+├── storage/
+├── tests/
+│
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+└── README.md
+```
+
+---
+
+## Database Information
+
+CraftCeylon uses MySQL to store application data.
+
+The project includes Laravel migrations for creating the required database tables, including:
+
+- Users
+- Categories
+- Products
+- Carts
+- Cart Items
+- Orders
+- Order Items
+- Contact Messages
+
+Product and category images are stored using Laravel public storage.
+
+---
+
+## Security
+
+- Authentication for customer and admin access.
+- Protected admin routes.
+- Authorization checks for customer orders.
+- Environment variables used for database configuration.
+- Sensitive environment files are excluded from the Git repository.
+
+---
+
+## GitHub Repository
+
+**Repository:** https://github.com/hashiniranasingha/CraftCeylon
+
+---
+
+## Project Description
+
+CraftCeylon is an E-Commerce Business Website designed to support Sri Lankan handmade crafts businesses by providing an online platform to showcase traditional products, reach customers, and manage online sales efficiently.
